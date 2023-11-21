@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: linear-gradient(to top , #15181a , #32353c);
+    height: 175vh;
+    overflow-x: hidden;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.page .top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-top: 50px;
+}
+
+.page .top .content h1 {
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.page .top .content a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.page .top .content a:hover {text-decoration: underline;}
+
+.page .top img {
+    width: 200px;
+    height: 125px;
+}
+
+.page .bottom {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.page .bottom h1 {
+    font-size: 40px;
+    margin-bottom: 100px;
+}
+
+.page .bottom button {
+    color: #fff;
+    background-color: #414141;
+    border-radius: 7px;
+    border: 3px solid #36383d;
+    font-size: 20px;
+    padding: 10px 15px;
+    margin: 0px 50px;
+    box-shadow: 7px 7px 3px #000;
+    transition: all .1s ease-out;
+    cursor: pointer;
+}
+
+.page .bottom button:hover {
+    background-color: #313131;
+    box-shadow: 0px 20px 20px #00000075;
+}
+
+.end {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.end .second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.end h1 {
+    color: #fff;
+    font-size: 40px;
+}
+
+.end .box {
+    width: 325px;
+    height: 325px;
+    background-color: #414141;
+    clip-path: circle(50% at 0 0);
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    transition: all 1s cubic-bezier(0.66,-0.36, 0, 0.87);
+}
+
+.end .box:hover {
+    clip-path: circle(100%);
+    transform: rotate(360deg);
+}
+
+.end .box .content {
+    opacity: 0;
+    transition: all 1s cubic-bezier(0.66,-0.36, 0, 0.87);
+}
+
+.end .box:hover .content {
+    opacity: 1;
+}
+
+.end .box .content h2 {
+    margin-bottom: 50px;
+    font-size: 35px;
+}
+
+.end .box .content p {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 25px;
+}
